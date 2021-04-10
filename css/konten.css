@@ -1,0 +1,69 @@
+body {
+	background-image:linear-gradient(rgba(0,0,0,0.90),rgba(0,0,0,0.40)), url("../gambar/image.jpg");
+	background-size: cover;
+	background-position: center;
+	}
+
+.beli {
+	transition: 1s;
+	position: fixed;	
+	z-index: 999999;
+	transition: 1s;
+	} 
+
+.beli:target {
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	bottom: 0%;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.card:target {
+	
+}
+
+.beli .card {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: muncul 1s;
+	
+}
+
+.beli .card img {
+	transition: 0.4s;
+}
+
+.beli .card img:hover {
+	transform: scale(1.2);
+	transition: 0.4s;
+	cursor: pointer
+}
+
+warna {
+	color: red;
+}
+
+@keyframes muncul {
+	from {
+		transform: scale(0);
+		opacity: 0;
+		position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+		position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	}
+}
+
+
+
